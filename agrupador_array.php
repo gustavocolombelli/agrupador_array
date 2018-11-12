@@ -3,7 +3,7 @@
 Agrupador de array por chave (índice) informado
 */
  public function agrupador_array(array $array, $chave)
-    {
+ {
         if (!is_string($chave) && !is_int($chave) && !is_float($chave) && !is_callable($chave) ) 
         {
             trigger_error('agrupador_array(): A chave precisa ser uma string ou inteiro', E_USER_ERROR);
@@ -48,4 +48,4 @@ Agrupador de array por chave (índice) informado
             }
         }
         return $agrupado;
-    }
+ }
